@@ -1,1 +1,46 @@
 Ho va ten: Nguyen Thuy DUong
+
+Bước 1: git pull origin main
+Bước 2: git checkout -b ten_nhanh_moi
+Bước 3: thực hiện việc coding
+Bước 4: git add .
+        - git add . -> add tất cả cá file đang có sự thay đổi, tạo mới, đã xóa
+        - git add -A -> add tất cả các gile có sự thay đổi or tạo mới
+        - git add ten_file 
+Bước 5: git commit -m "tên commit....."
+Buowcsd 6: git push origin ten_nhanh_moi
+Bước 7: Tạo pull reuqtes trên giao diện của github
+Nước 8: gửi leader
+
+TH1: merged -> OK
+TH2: bị comnend:
+     Cần thực hiện từ bước 3 tới bước 6
+
+Lưu ý:
+1. Luôn luôn pull main khi có người được merged
+
+   Bước 1: git checkout main
+   Bước 2: git pull origin main
+   Bước 3: git checkout nhánh
+   Bước 4: git rebase main
+2. Khi bị conflict với code trước đó
+   Bước 1: git status
+           Ktra các file màu đỏ
+
+	   >>>>>>>>>>>HEAD
+              Code cũ
+           ===================
+              Code của các bạn
+           <<<<<<<<<<<<<Tên commit của các bạn
+  Bước 2: git add .
+  Bước 3: git rebase --continue
+         TH1: Không còn conflict
+              Bước 4: git push origin ten_nhanh -f
+         TH2: Vẫn còn conflict
+              Tiếp tục thực hiện b1-> b3
+- Cách phát hiên conflict:
+C1: git branch
+    Đứng trên nhánh "no branch,....."
+C2: CONFLICT tên file.....
+
+          
