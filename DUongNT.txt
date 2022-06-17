@@ -43,4 +43,8 @@ C1: git branch
     Đứng trên nhánh "no branch,....."
 C2: CONFLICT tên file.....
 
-          
+            
+
+
+
+            
